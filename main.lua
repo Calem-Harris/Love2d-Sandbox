@@ -12,4 +12,27 @@ function love.errorhandler(msg)
     end
 end
 
-print("Hello World")
+print("Hello World");
+print(type("Hello World")); -- String --
+print(type(10.4)); -- Number --
+print(type(print)); -- function --
+print(type(true)); -- Boolean --
+print(type(nil)); -- Nil -- 
+
+thing1 = function()
+    print("Hello World")
+end
+
+thing1()
+thing1()
+
+function example()
+    print("Hello World Again!")
+end
+
+example()
+example()
+
+function love.draw()
+    love.graphics.rectangle("line", 100, 200, 50, 80)
+end
