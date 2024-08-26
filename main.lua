@@ -103,6 +103,7 @@ end
 
 function love.draw()
     for i, row in ipairs(tilemap) do
+        
         for j, tile in ipairs(row) do
             if tile ~= 0 then
                 -- if tile == 1 then
